@@ -4,6 +4,7 @@
  */
 public class ArrayDeque<T> {
 
+    
     /** array to save data.*/
     private T[] array;
     /** size of the deque. */

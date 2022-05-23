@@ -23,7 +23,7 @@ public class LinkedListDeque<T> {
         sentinel.next=sentinel;
         sentinel.pre=sentinel;
     }
-    public Boolean isEmpty(){
+    public boolean isEmpty(){
         return size==0;
     }
     public int size(){
@@ -75,7 +75,7 @@ public class LinkedListDeque<T> {
         if(index>=size)return null;
         return getRecursiveHelper(index,sentinel.next);
     }
-    public T getRecursiveHelper(int now,Node ptr)
+    private T getRecursiveHelper(int now,Node ptr)
     {
 
         if(now==0)return ptr.item;
@@ -90,4 +90,6 @@ public class LinkedListDeque<T> {
            ptr=ptr.next;
         }
     }
+
 }
+
